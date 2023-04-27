@@ -87,5 +87,7 @@ function uniq(arr) {
 
 // once the length gets long enough, it becomes more optimal to just use a word list and compare to the hashes
 // because the amount of strings of that length from the grid grows exponentially
+// while the amount of words on the list of that length should get smaller
+// and you don't need to find them on the grid, you can just try the hash against the list of answers
 // but this can find 10 letter words in a reasonable amount of time
 wordLengths.forEach(l => console.log(uniq(recurseCombinations(l))))
